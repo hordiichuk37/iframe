@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+ <html lang="pl-PL">
+  <html>
+     <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Formularz</title>
+       <link rel="stylesheet" href="style.css">
+     </head>
+  <body bgcolor="#E9D9A1">
+     <a href ="index.html">Wróć</a> <br> <br>
+    
+     <div class="formularz">
+
+      <p class="pp">Formularz</p>
+      <h1 class="hh">Quest sportowy</h1>
+
+      <form  enctype="text/plain" action="mailto:hordiichuk.off@gmail.com" subject="formularz_dane" method="Post">
+
+         <p><small>* - pole obowiązkowe</small></p><br>
+         
+         <p>
+          <label for="imie"><b>Imię*</b></label>
+          <div class="forma">
+            <input type="text" placeholder="Wpisz imię" id="imie" required><br>
+         </div>
+         </p>
+         <br>
+
+
+         <p>
+            <label for="nazw"><b>Nazwisko*</b></label>
+            <div class="forma">
+              <input type="text" placeholder="Wpisz nazwisko" id="nazw" required><br>
+            </div>
+         </p>   
+         <br>
+
+
+         <p>
+            <label for="email"><b>Adres e-mail*</b></label>
+            <div class="forma">
+              <input type="email" placeholder="Wpisz e-mail" id="email" required><br>
+            </div>
+         </p>   
+         <br>
+         
+         <p>
+            <label for="haslo"><b>Haslo*</b></label>
+            <div class="forma">
+              <input type="password" placeholder="Wpisz haslo" id="haslo" required><br>
+            </div>
+         </p>   
+         <br>
+
+
+         <p>
+            <label for="data"><b>Data urodzenia*</b></label>
+            <div class="forma">
+              <input type="date" placeholder="Wpisz date" id="data" required><br>
+            </div>
+         </p>  
+         <br>
+
+         <p>
+            <label for="level"><b>Poziom sprawności fizycznej</b><br> <small>(pocztkujący-zaawansowany)</small><b>*</b></label>
+            <div class="forma">
+              <input type="range" id="level" min="1" max="5" step="1"><br>
+            </div>
+         </p>   
+         <br>
+
+
+         <p>
+            <label><b>Czy brałeś(-aś) wczśniej<br> udział w zawodach sportowych?*</b></label>
+            <div class="forma">
+              <input type="radio" id="tak" name="quest" value="tak" required>
+              <label for="tak">Tak</label>
+              <input type="radio" id="nie" name="quest" value="nie">
+              <label for="nie">Nie</label>
+            </div>
+         </p>   
+         <br>
+
+
+         <p>
+            <label for="zrd"><b>Ograniczenia zdrowotne</b></label>
+            <div class="forma">
+         <textarea id="zdr" placeholder="Wpisz ograniaczenia zdrowotne" cols="30" rows="10"></textarea> 
+            </div>
+         <br>
+         <br>
+
+
+         <p>
+            <label><b>Preferencjii w zadaniach*</b></label>
+            <div class="forma">
+            <select id="options" >
+               <option value="op1">Fizyczne</option>
+               <option value="op2">Zręcznościowe</option>
+               <option value="op3">Logiczne</option>
+               <option value="op4">Zespołowe</option>
+            </select> 
+            </div>
+         </p>   
+         <br>
+
+
+         <center><p>
+            <label></label>
+              <input type="checkbox" id="zas" name="zasady" required>
+              <label for="zas"><b>Zapoznałem(-am) się z zasadami questu*</b></label>
+         </p></center>   
+         <br> <br> <br>
+
+
+      <div class="buty">
+        
+         <input type="reset" value="Ponownie" class="but1">
+         
+        
+          <input type="submit" value="Wyslać" class="but2">
+      </div>
+     </form>
+
+   </div>
+
+  </body>
+  </html>
